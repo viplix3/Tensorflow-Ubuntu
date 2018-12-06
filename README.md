@@ -1,6 +1,6 @@
  Installs the gpu version of tensorflow using python package manager along with all the dependencies.
 
-## NOTE: THIS SCRIPT WORKS AS OF 4th December, 2018. Dependencies may change, making the script break and unable to do the intended task in the future.
+## NOTE: THIS SCRIPT WORKS AS OF 4th December, 2018. Dependencies may change, which may break the script making it unable to do the intended task in the future.
 
 
 ### How to run the scripts?
