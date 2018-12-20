@@ -52,12 +52,12 @@ printf "\nNOW YOU WILL SEE A BUNCH OF QUESTIONS, ANSWER THEM AS FOLLOWS: \n\nYou
 
 sleep 5s
 
-chmod +x cuda_9.0.176_384.81_linux-run 
+chmod +x cuda_9.0.176_384.81_linux-run
 sudo ./cuda_9.0.176_384.81_linux-run --override
 
-#sudo apt-get install cuda9.0 cuda-cublas-9-0 cuda-cufft-9-0 cuda-curand-9-0 \
-#  cuda-cusolver-9-0 cuda-cusparse-9-0 libcudnn7=7.1.4.18-1+cuda9.0 \
-#   libnccl2=2.2.13-1+cuda9.0 cuda-command-line-tools-9-0
+sudo apt-get install cuda9.0 cuda-cublas-9-0 cuda-cufft-9-0 cuda-curand-9-0 \
+  cuda-cusolver-9-0 cuda-cusparse-9-0 libcudnn7=7.1.4.18-1+cuda9.0 \
+   libnccl2=2.2.13-1+cuda9.0 cuda-command-line-tools-9-0
 
 sudo apt-get update
 sudo apt-get install libnvinfer4=4.1.2-1+cuda9.0
@@ -70,4 +70,6 @@ sudo printf "\nexport LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64\${LD_LIBRARY_PAT
 sudo printf "\nexport LD_LIBRARY_PATH=/usr/local/cuda-9.0/extras/CUPTI/lib64\${LD_LIBRARY_PATH:+:\${LD_LIBRARY_PATH}}" >> ~/.bashrc
 sudo printf "\nalias python=\"python3\"" >> ~/.bashrc
 
-printf "\nSome environment variables were added to ~/.bashrc.\nPlease close the terminal and run the script again for the changes to take effect and continue the installation.\n\n"
+printf "\nSome environment variables were added to ~/.bashrc.\nThe system will reboot now, after reboot, please run the script again!!"
+sleep 10s
+reboot
