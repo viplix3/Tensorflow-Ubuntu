@@ -20,7 +20,7 @@ if echo $cuDNN_check | grep CUDNN_MAJOR;
             sudo dpkg -i ./libcudnn7_7.3.1.20-1+cuda9.0_amd64.deb;
             sudo dpkg -i ./libcudnn7-dev_7.3.1.20-1+cuda9.0_amd64.deb;
         else
-            printf "cuDNN files not found. Please register at nvidia developers https://developer.nvidia.com/cudnn Download 9.1 runtime & developer library for 16.04 (Files cuDNN v7.3.1 Runtime Library for Ubuntu16.04 (Deb) & cuDNN v7.1.3 Developer Library for Ubuntu16.04 (Deb)) Open the files with software manager and install them.\n\n";
+            printf "cuDNN files not found. Please register at nvidia developers https://developer.nvidia.com/cudnn Download 9.1 runtime & developer library for 16.04 (Files cuDNN v7.3.1 Runtime Library for Ubuntu16.04, CUDA-9.0(Deb) & cuDNN v7.1.3 Developer Library for Ubuntu16.04, CUDA-9.0(Deb)) Open the files with software manager and install them.\n\n";
             exit 1
         fi
 fi
